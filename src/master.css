@@ -1,0 +1,234 @@
+/* Contents of App.css and Game.css combined */
+/* Include all styles from both files here, ensuring no duplicates */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #87CEEB; /* Light blue background */
+  background-image: url('../public/images/lebron.jpeg'); /* Adjust path as needed */
+  background-repeat: repeat; /* Tile the cloud image */
+  animation: moveClouds 30s linear infinite;
+}
+
+/* Additional combined styles... */
+
+@keyframes moveClouds {
+  0% { background-position: 0 0; }
+  100% { background-position: 1000px 0; }
+}
+
+/* Continue with the rest of the styles from both App.css and Game.css */
+
+
+
+/* New button style */
+button, .button-style {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+  border-radius: 20px; /* Rounded corners */
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px; /* Adds space above the buttons, pushing them lower */
+}
+.home-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Ensure the content fills the viewport vertically */
+  text-align: center; /* Center-align the text for the welcome message */
+}
+
+.navigation-links {
+  display: flex;
+  flex-direction: column; /* Stack links vertically */
+  align-items: center; /* Center-align the links */
+  margin-top: 20px; /* Additional spacing from the welcome message */
+}
+
+.button-style {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-decoration: none; /* Remove underline from links */
+  display: inline-block; /* Allow padding and text-alignment */
+  margin: 10px 0; /* Space between buttons */
+  text-align: center;
+}
+
+.button-style:hover {
+  background-color: #f0f0f0;
+}
+
+button:hover, .button-style:hover {
+  background-color: #f0f0f0; /* Light grey on hover */
+}
+
+/* Adjusting the .home-buttons class for vertical stacking and centering */
+.home-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Full viewport height */
+}
+
+/* Style for nicer text boxes */
+.nice-input {
+  padding: 10px;
+  margin: 10px 0; /* Adds space above and below */
+  border: 2px solid #ccc; /* Nicer border */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 16px; /* Larger text */
+  outline: none; /* Removes the default focus outline */
+}
+
+.nice-input:focus {
+  border-color: #2196F3; /* Changes border color on focus */
+}
+
+/* General button and title styling adjustments for vertical stacking */
+.button-style, .title-style {
+  margin: 10px 0; /* Adds space above and below for stacking */
+  width: 80%; /* Adjusts width to not span the full container width */
+  text-align: center; /* Centers the text within */
+}
+
+/* Additional container for centering player inputs vertically */
+.player-input-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Full viewport height */
+}
+
+/* Title style */
+.title-style {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+  border-radius: 20px; /* Rounded corners */
+  padding: 10px 20px;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 20px; /* Space between the title and buttons */
+}
+
+
+@keyframes moveClouds {
+  0% { background-position: 0 0; }
+  100% { background-position: 1000px 0; }
+}
+
+a {
+  text-decoration: none;
+  color: #2196F3;
+  margin: 10px;
+}
+
+a:hover {
+  color: #0d47a1;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+.form-input {
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.form-button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.form-button:hover {
+  background-color: #45a049;
+}
+.game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(180deg, #87CEEB 0%, #87CEFA 100%);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.game-info {
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.restart-button button {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.restart-button button:hover {
+  background-color: #d32f2f;
+}
+
+.board-row {
+  display: flex;
+}
+
+.square {
+  background: #fff;
+  border: 2px solid #999;
+  border-radius: 10px;
+  width: 60px;
+  height: 60px;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+  color: #555;
+  transition: transform 0.1s ease;
+}
+
+.square:hover {
+  transform: scale(1.1);
+}
+
+.playerX {
+  color: #2196F3;
+}
+
+.playerO {
+  color: #E91E63;
+}
