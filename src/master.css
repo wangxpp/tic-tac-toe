@@ -6,7 +6,7 @@ body {
   padding: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #87CEEB; /* Light blue background */
-  background-image: url('../public/images/lebron.jpeg'); /* Adjust path as needed */
+  background-image: url('../public/images/clouds.png'); /* Adjust path as needed */
   background-repeat: repeat; /* Tile the cloud image */
   animation: moveClouds 30s linear infinite;
 }
@@ -15,7 +15,7 @@ body {
 
 @keyframes moveClouds {
   0% { background-position: 0 0; }
-  100% { background-position: 1000px 0; }
+  50% { background-position: 1000px 0; }
 }
 
 /* Continue with the rest of the styles from both App.css and Game.css */
